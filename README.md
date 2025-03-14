@@ -5,3 +5,31 @@
 - Utilizando Banco de dados Sqlite, por ser um banco de dados SQL(Relacional)
 
 - Utilizando Querybuilder [Knexjs](https://knexjs.org) - [Doc Nodejs](https://knexjs.org/guide/#node-js)
+## Knexjs
+  Foi desenvolvido para ser utilizado com o Javascript e não com o Typescript. **Quando instalamos o Knexjs** dentro da pasta **node_modules** dentro de **bin** nos temos uma **CLI** do **Knex** para podermos executar, no terminal usamos o comando **npx knex -h** ele apresenta varios commando que temos disponiveis no **knex** para rodar.
+
+  #### Para podermos criar nosso primeira migração
+  - Vamos criar um arquivo na raiz do nosso projeto com o nome **knexfile.ts** e rodamos o comando **npx knex migrate:make create-document** para criar nossa primeira migração
+
+  Mas para isso temos que fazer uma pequena alteração no arquivo **src/database.ts** e vamos install o 
+  ```js
+  De
+  export const knex = setupKnex({
+    client: 'sqlite',
+    connection: {
+      filename: './temp/app.db',
+    },
+    useNullAsDefault: true,
+  });
+
+  Para
+  export const config = {
+    client: 'sqlite',
+    connection: {
+      filename: './temp/app.db',
+    },
+    useNullAsDefault: true,
+  };
+
+  export const knex = setupKnex(config);
+  ```
