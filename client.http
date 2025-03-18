@@ -1,1 +1,16 @@
+
 GET http://localhost:3333/hello HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3333/transactions HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3333/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Transaction from test",
+  "amount": 100.10
+}
