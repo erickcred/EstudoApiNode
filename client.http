@@ -12,5 +12,18 @@ Content-Type: application/json
 
 {
   "title": "Transaction from test",
-  "amount": 100.10
+  "amount": 102.10
 }
+###
+
+PUT http://localhost:3333/transactions/249682ea-5a83-4eae-9ccc-3ad98ab14282 HTTP/1.1
+Content-Type: application/json
+
+{
+  "tiele": "Transaction from Atualizado",
+  "amount": 120.10
+}
+###
+
+DELETE http://localhost:3333/transactions/0d3aa3fa-f192-4a40-bbaa-3da10c322480 HTTP/1.1
+# Content-Type: application/json
