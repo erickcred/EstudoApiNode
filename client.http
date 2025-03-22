@@ -1,9 +1,13 @@
 
-GET http://localhost:3333/hello HTTP/1.1
+GET http://localhost:3333/transactions HTTP/1.1
 Content-Type: application/json
 ###
 
-GET http://localhost:3333/transactions HTTP/1.1
+GET http://localhost:3333/transactions/eb2b483b-0fce-4016-8709-7daaaffc66f6 HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3333/transactions/summary HTTP/1.1
 Content-Type: application/json
 ###
 
@@ -11,8 +15,9 @@ POST http://localhost:3333/transactions HTTP/1.1
 Content-Type: application/json
 
 {
-  "title": "Transaction from test",
-  "amount": 102.10
+  "title": "Freelancer",
+  "amount": 125000.10,
+  "type": "credit"
 }
 ###
 
@@ -25,5 +30,5 @@ Content-Type: application/json
 }
 ###
 
-DELETE http://localhost:3333/transactions/0d3aa3fa-f192-4a40-bbaa-3da10c322480 HTTP/1.1
+DELETE http://localhost:3333/transactions/eb2b483b-0fce-4016-8709-7daaaffc66f6 HTTP/1.1
 # Content-Type: application/json
