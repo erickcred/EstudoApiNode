@@ -3,7 +3,7 @@ GET http://localhost:3333/transactions HTTP/1.1
 Content-Type: application/json
 ###
 
-GET http://localhost:3333/transactions/eb2b483b-0fce-4016-8709-7daaaffc66f6 HTTP/1.1
+GET http://localhost:3333/transactions/edf55e30-47bb-49d8-9093-6b9dabaa48bb HTTP/1.1
 Content-Type: application/json
 ###
 
@@ -16,19 +16,20 @@ Content-Type: application/json
 
 {
   "title": "Freelancer",
-  "amount": 125000.10,
+  "amount": 5000.10,
   "type": "credit"
 }
 ###
 
-PUT http://localhost:3333/transactions/249682ea-5a83-4eae-9ccc-3ad98ab14282 HTTP/1.1
+PUT http://localhost:3333/transactions/edf55e30-47bb-49d8-9093-6b9dabaa48bb HTTP/1.1
 Content-Type: application/json
 
 {
-  "tiele": "Transaction from Atualizado",
-  "amount": 120.10
+  "title": "Freelancer Transaction from Atualizado",
+  "amount": 120.20,
+  "type": "debit"
 }
 ###
 
-DELETE http://localhost:3333/transactions/eb2b483b-0fce-4016-8709-7daaaffc66f6 HTTP/1.1
+DELETE http://localhost:3333/transactions/21d31d93-e107-455b-b8dd-aedb51ad6ce9 HTTP/1.1
 # Content-Type: application/json
