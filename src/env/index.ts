@@ -14,7 +14,7 @@ const envSchema = z.object({
   DATABASE_URL: z.string(),
   DATABASE_EXTENSION: z.string(),
   DATABASE_MIGRATIONS_DIR: z.string(),
-  PORT: z.number().default(3333),
+  PORT: z.coerce.number().default(3333),
 });
 
 const _env = envSchema.safeParse(process.env);
