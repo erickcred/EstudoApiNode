@@ -10,7 +10,7 @@ console.log(process.env.NODE_ENV);
 
 const envSchema = z.object({
   NODE_ENV: z.enum([ 'development', 'test', 'production' ]).default('production'),
-  DATABASE_CLIENT: z.string(),
+  DATABASE_CLIENT: z.enum(['sqlite', 'pg']),
   DATABASE_URL: z.string(),
   DATABASE_EXTENSION: z.string(),
   DATABASE_MIGRATIONS_DIR: z.string(),

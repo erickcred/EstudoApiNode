@@ -122,3 +122,13 @@
 ## Build da aplicação
   - Vamos instalar o package **npm install -D tsup**
   - No package.json vamos criar um script para fazer o build da aplicação **"build": "tsup src --out-dir build"**
+
+## Deploy da aplicação em uma pataforma gerenciada 
+  #### Lista de plataformas gerenciadas
+  - [Vercel](https://vercel.com)
+  - [Netlify](https://www.netlify.com)
+  - [Render](https://render.com)
+  - [Railway](https://railway.app)
+  - [Fly.io](https://fly.io)
+
+- Vamos utilizar o [Render](https://render.com)
