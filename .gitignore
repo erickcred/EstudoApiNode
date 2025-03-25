@@ -5,6 +5,7 @@
 
 # dotenv files
 .env
+.env.test
 
 # User-specific files
 *.rsuser
@@ -104,6 +105,7 @@ StyleCopReport.xml
 *.svclog
 *.scc
 db/app.db
+db/test.db
 
 # Chutzpah Test files
 _Chutzpah*
