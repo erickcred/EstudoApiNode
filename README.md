@@ -118,3 +118,7 @@
     expect(response.statusCode).toEqual(201);
   });
   ```
+
+## Build da aplicação
+  - Vamos instalar o package **npm install -D tsup**
+  - No package.json vamos criar um script para fazer o build da aplicação **"build": "tsup src --out-dir build"**

@@ -106,6 +106,7 @@ StyleCopReport.xml
 *.scc
 db/app.db
 db/test.db
+build
 
 # Chutzpah Test files
 _Chutzpah*
